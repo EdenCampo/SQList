@@ -1,0 +1,31 @@
+name: SQList
+main: net.edencampo.SQList.SQList
+version: 1.0.0
+author: Eden.Campo
+
+commands:
+  SQList:
+      description: SQList's help command
+      usage: /<command>
+  SQList add:
+      description: Adds a player to the SQList
+      usage: /<command> <name>
+  SQList remove:
+      description: Removes a player from the SQList
+      usage: /<command> <name>
+      
+      
+permissions:
+    SQList.*:
+        description: Gives access everything related to SQList
+        children:
+            SQList.add: true
+            SQList.remove: true
+            
+    SQList.add:
+        description: Gives the ability to add people to the SQList
+        default: op 
+        
+    SQList.remove:
+        description: Gives the ability to remove people from the SQList
+        default: op 

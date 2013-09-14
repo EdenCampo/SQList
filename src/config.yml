@@ -1,0 +1,11 @@
+# Default Configuration for 'SQList' - Eden.Campo
+
+autoUpdate: true
+
+host: host
+port: 0
+database: db
+user: username
+password: pw
+
+firstStartup: yes
